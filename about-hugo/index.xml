@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About-hugos on 青衫不是山</title>
+    <link>http://penghaiku.github.io/about-hugo/</link>
+    <description>Recent content in About-hugos on 青衫不是山</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-zh</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 23 Jan 2021 16:47:31 +0800</lastBuildDate><atom:link href="http://penghaiku.github.io/about-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://penghaiku.github.io/about-hugo/readme/</link>
+      <pubDate>Sat, 23 Jan 2021 16:47:31 +0800</pubDate>
+      
+      <guid>http://penghaiku.github.io/about-hugo/readme/</guid>
+      <description>关于本站  佛系站长，不定时更新！ 本站仅作为演示站点，仅供学习和交流使用  私人定制网址导航：Betterman网址导航 个人博客：青衫不是山 联系我  个人邮箱：bettermanxyz@gmail.com 个人微信：bettermanxyz 给我留言：留言板  </description>
+    </item>
+    
+  </channel>
+</rss>
