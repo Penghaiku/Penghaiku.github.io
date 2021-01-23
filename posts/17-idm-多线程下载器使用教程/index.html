@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="17-IDM多线程下载器使用教程">
+<meta itemprop="description" content="一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！
+IDM (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。
+ 下载 IDM 安装包  官方下载 ：http://www.internetdownloadmanager.com/download.html	下载后可以免费试用 30天   数码荔枝：99一年授权，149永久授权。   第三方下载：本教程以安装 第三方修改一键安装版 IDM_6.38.7_俄版 为例，演示安装及其使用技巧 ~  安装软件  将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。
+  安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。
+ 软件的基本优化  更改语言   软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 View --&gt; Language --&gt; 简体中文
+  更改下载线程（连接数）   这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。
+ 开启拓展程序  如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &ndash;&gt; 拓展 &ndash;&gt; 点击开启拓展
+这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展
+ 文件下载测试  视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等   只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。">
+<meta itemprop="datePublished" content="2021-01-23T16:49:20+08:00" />
+<meta itemprop="dateModified" content="2021-01-23T16:49:20+08:00" />
+<meta itemprop="wordCount" content="118">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="17-IDM多线程下载器使用教程" />
+<meta property="og:description" content="一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！
+IDM (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。
+ 下载 IDM 安装包  官方下载 ：http://www.internetdownloadmanager.com/download.html	下载后可以免费试用 30天   数码荔枝：99一年授权，149永久授权。   第三方下载：本教程以安装 第三方修改一键安装版 IDM_6.38.7_俄版 为例，演示安装及其使用技巧 ~  安装软件  将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。
+  安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。
+ 软件的基本优化  更改语言   软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 View --&gt; Language --&gt; 简体中文
+  更改下载线程（连接数）   这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。
+ 开启拓展程序  如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &ndash;&gt; 拓展 &ndash;&gt; 点击开启拓展
+这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展
+ 文件下载测试  视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等   只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://penghaiku.github.io/posts/17-idm-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" />
+<meta property="article:published_time" content="2021-01-23T16:49:20+08:00" />
+<meta property="article:modified_time" content="2021-01-23T16:49:20+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="17-IDM多线程下载器使用教程"/>
+<meta name="twitter:description" content="一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！
+IDM (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。
+ 下载 IDM 安装包  官方下载 ：http://www.internetdownloadmanager.com/download.html	下载后可以免费试用 30天   数码荔枝：99一年授权，149永久授权。   第三方下载：本教程以安装 第三方修改一键安装版 IDM_6.38.7_俄版 为例，演示安装及其使用技巧 ~  安装软件  将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。
+  安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。
+ 软件的基本优化  更改语言   软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 View --&gt; Language --&gt; 简体中文
+  更改下载线程（连接数）   这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。
+ 开启拓展程序  如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &ndash;&gt; 拓展 &ndash;&gt; 点击开启拓展
+这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展
+ 文件下载测试  视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等   只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>17-IDM多线程下载器使用教程</title>
+	<link rel="stylesheet" href="https://penghaiku.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://penghaiku.github.io">不是山</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://penghaiku.github.io/posts/">文章</a>
+				<a href="https://penghaiku.github.io/posts/readme/">关于我</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://penghaiku.github.io/posts/">文章</a></li>
+			<li><a href="https://penghaiku.github.io/posts/readme/">关于我</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 23, 2021</span></div>
+				<h1>17-IDM多线程下载器使用教程</h1>
+			</header>
+			<div class="content">
+				<blockquote>
+<p>一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！</p>
+<p><strong>IDM</strong>  (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。</p>
+</blockquote>
+<h2 id="下载-idm-安装包">下载 IDM 安装包<a href="#下载-idm-安装包" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li>官方下载 ：http://www.internetdownloadmanager.com/download.html		下载后可以免费试用 30天</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142104068.png" alt=""></p>
+<ul>
+<li>数码荔枝：99一年授权，149永久授权。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020141549649.png" alt=""></p>
+<ul>
+<li>第三方下载：本教程以安装 第三方修改一键安装版 <code>IDM_6.38.7_俄版</code> 为例，演示安装及其使用技巧 ~</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142913282.png" alt=""></p>
+<h2 id="安装软件">安装软件<a href="#安装软件" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<blockquote>
+<p>将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142726632.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143123687.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143146953.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143259210.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143322269.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143511325.png" alt=""></p>
+<blockquote>
+<p>安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。</p>
+</blockquote>
+<h2 id="软件的基本优化">软件的基本优化<a href="#软件的基本优化" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li>更改语言</li>
+</ul>
+<blockquote>
+<p>软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 <code>View --&gt; Language  --&gt; 简体中文</code></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143945490.png" alt=""></p>
+<ul>
+<li>更改下载线程（连接数）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020144818104.png" alt=""></p>
+<blockquote>
+<p>这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。</p>
+</blockquote>
+<h2 id="开启拓展程序">开启拓展程序<a href="#开启拓展程序" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<blockquote>
+<p>如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &ndash;&gt; 拓展 &ndash;&gt; 点击开启拓展</p>
+<p>这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020161820424.png" alt=""></p>
+<h2 id="文件下载测试">文件下载测试<a href="#文件下载测试" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li>视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等</li>
+</ul>
+<blockquote>
+<p>只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020152253633.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020160417373.png" alt=""></p>
+<ul>
+<li><strong>下载文件测试</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020152555843.png" alt=""></p>
+<blockquote>
+<p>​		当弹出下载窗口时，IDM已经开始在后台开始下载了，这会让你产生一种错觉 → 点击开始下载后，你发现文件已经下载了一大半 ~~ 这是因为 IDM 下载时的连接数很多，下载界面显示传输速度已经达到了 11.7Mbps，快要拉满 100M带宽了。细心的你会发现下面下载进度条中有16根小红线，这正是我们之前设置的最大连接数，如果你修改成了32，那么下方将会显示32根小红线，并且更加密集。增加下载线程会将你的下载文件速度最高提升 5~6 倍 ！</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020152759761.png" alt=""></p>
+<ul>
+<li>下载特殊的 m3u8文件</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020154504111.png" alt=""></p>
+<blockquote>
+<p>此处的m3u8文件实质上是一个播放列表，意思是将一个完整的视频分割成一小段一小段，然后逐个放给你看。有些网站的m3u8文件是可以直接利用IDM下载的，并且能够下载到完整的视频，但拿国内的<code>腾讯课堂</code>来说，这个网站对视频文件进行了分割，我们需要下载所有的视频片段进行拼接，这给我们下载一个完整的视频带来很大的麻烦，我们可以通过 IDM + N_m3u8DL-CLI.exe 的方式解决，具体内容请参考往期文章：https://betterman.xyz/348.html</p>
+</blockquote>
+<ul>
+<li>文件下载路径：文件保存位置</li>
+</ul>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020153605372.png" alt=""></p>
+<h2 id="卸载">卸载<a href="#卸载" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020161457429.png" alt=""></p>
+<blockquote>
+<p>从安装到卸载，一条龙服务！</p>
+<p>Win + S 搜索控制面板，进入卸载软件，右键 IDM 即可卸载</p>
+<p>注意，点击 卸载 后可能会重启电脑，请保存好当前工作环境并关闭所有软件后再进行卸载操作。</p>
+</blockquote>
+<h2 id="类似软件">类似软件<a href="#类似软件" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li>FDM：免费开源，支持p2p，下载种子和磁力链接</li>
+<li>XDM</li>
+<li>ADM</li>
+<li>NDM</li>
+</ul>
+<h2 id="下载百度网盘文件">下载百度网盘文件<a href="#下载百度网盘文件" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020162433771.png" alt=""></p>
+<blockquote>
+<p>众所周知，pandownload事件发生后，大家都在骂百度。害，毕竟百度也是要恰饭的，但收费确实有点点贵了。那么作为一个普通用户该如何使用 IDM 来下载百度网盘的文件呢？</p>
+</blockquote>
+<blockquote>
+<p>pandownload 软件内部使用的是 Aria2 多线程下载，其原理与 IDM 类似！</p>
+</blockquote>
+<ul>
+<li>具体步骤</li>
+</ul>
+<ol>
+<li>选项 -&gt; 下载 -&gt; 手动添加任务时使用的用户代理（UA）-&gt; 填入 <strong>LogStatistic</strong></li>
+<li><strong>右键复制下载链接</strong>（直接点击 或 右键调用 IDM 将传入浏览器的 UA，将会导致下载失败），在 IDM 新建任务，粘贴链接即可下载。</li>
+<li>具体内容请查看往期文章《最新福利&ndash;百度网盘在线解析满速下载》</li>
+</ol>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>118 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-01-23 16:49 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://penghaiku.github.io/posts/18-%E6%B2%A1%E6%9C%89%E6%89%BE%E4%B8%8D%E5%88%B0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B3%BB%E5%88%97/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>18 没有找不到的电子书系列</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://penghaiku.github.io">John Doe</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://penghaiku.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://penghaiku.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

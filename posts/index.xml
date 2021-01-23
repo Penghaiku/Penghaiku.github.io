@@ -1,20 +1,147 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on 青衫不是山</title>
-		<link>http://penghaiku.github.io/posts/</link>
-		<description>Recent content in Posts on 青衫不是山</description>
+		<title>Posts on 不是山</title>
+		<link>https://penghaiku.github.io/posts/</link>
+		<description>Recent content in Posts on 不是山</description>
 		<generator>Hugo -- gohugo.io</generator>
-		<language>en-zh</language>
+		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sat, 23 Jan 2021 17:04:47 +0800</lastBuildDate>
-		<atom:link href="http://penghaiku.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Sat, 23 Jan 2021 16:49:20 +0800</lastBuildDate>
+		<atom:link href="https://penghaiku.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>17-IDM多线程下载器使用教程</title>
+			<link>https://penghaiku.github.io/posts/17-idm-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
+			
+			<guid>https://penghaiku.github.io/posts/17-idm-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+			<description>一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！
+IDM (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。
+ 下载 IDM 安装包  官方下载 ：http://www.internetdownloadmanager.com/download.html	下载后可以免费试用 30天   数码荔枝：99一年授权，149永久授权。   第三方下载：本教程以安装 第三方修改一键安装版 IDM_6.38.7_俄版 为例，演示安装及其使用技巧 ~  安装软件  将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。
+  安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。
+ 软件的基本优化  更改语言   软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 View --&amp;gt; Language --&amp;gt; 简体中文
+  更改下载线程（连接数）   这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。
+ 开启拓展程序  如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &amp;ndash;&amp;gt; 拓展 &amp;ndash;&amp;gt; 点击开启拓展
+这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展
+ 文件下载测试  视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等   只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。</description>
+			<content type="html"><![CDATA[<blockquote>
+<p>一说到下载器，大家的第一想到的可能就是迅雷、QQ旋风、快车之类的下载软件了，现在0202年都快结束了，你不能不知道的一款 windows 下载神器！</p>
+<p><strong>IDM</strong>  (Internet Download Manager) 是商用的付费软件，Chrome和FireFox有扩展支持。支持多媒体下载、自动捕获链接、自动识别文件名、静默下载、批量下载、计划下载任务、站点抓取、队列与网盘支持等，主打“稳定”、“多文件管理”，功能很齐全，是老牌下载器之一。</p>
+</blockquote>
+<h2 id="下载-idm-安装包">下载 IDM 安装包</h2>
+<ul>
+<li>官方下载 ：http://www.internetdownloadmanager.com/download.html		下载后可以免费试用 30天</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142104068.png" alt=""></p>
+<ul>
+<li>数码荔枝：99一年授权，149永久授权。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020141549649.png" alt=""></p>
+<ul>
+<li>第三方下载：本教程以安装 第三方修改一键安装版 <code>IDM_6.38.7_俄版</code> 为例，演示安装及其使用技巧 ~</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142913282.png" alt=""></p>
+<h2 id="安装软件">安装软件</h2>
+<blockquote>
+<p>将软件安装包解压后，双击应用程序安装，此处使用的解压软件为 Bandzip，其他解压软件同理，注意这里是解压不是预览压缩包。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020142726632.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143123687.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143146953.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143259210.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143322269.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143511325.png" alt=""></p>
+<blockquote>
+<p>安装过程中电脑屏幕会闪动几下，这是正常现象。安装完成后会在桌面创建软件图标，并且在任务栏右下角你可以看到软件的缩略图标。至此，软件安装完毕，安装完后可以将软件压缩包以及解压后产生的文件夹删除。</p>
+</blockquote>
+<h2 id="软件的基本优化">软件的基本优化</h2>
+<ul>
+<li>更改语言</li>
+</ul>
+<blockquote>
+<p>软件安装完毕后，你会发现软件的语言是英文，哈哈，因为这是俄罗斯大神修改版，咱们直接改个语言就行了。 <code>View --&gt; Language  --&gt; 简体中文</code></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020143945490.png" alt=""></p>
+<ul>
+<li>更改下载线程（连接数）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020144818104.png" alt=""></p>
+<blockquote>
+<p>这里的最大连接数不是说设置的越大越好，这个要看网站对用户的发送的文件请求是否有限制。有一些版权意识较强的网站会限制用户的文件请求，通常在单次下载文件过程中只能发送一次文件请求，并且不支持断点续传。也就是说，就算你线程数设置的数目对下载文件没有任何影响，有时候反而会起副作用。</p>
+</blockquote>
+<h2 id="开启拓展程序">开启拓展程序</h2>
+<blockquote>
+<p>如果你使用的是系统自带的Chromium内核 的 Edge浏览器，你需要在设置 &ndash;&gt; 拓展 &ndash;&gt; 点击开启拓展</p>
+<p>这里推荐使用 Chrome 浏览器，安装IDM后，会自动给Chrome 浏览器安装并开启该拓展</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020161820424.png" alt=""></p>
+<h2 id="文件下载测试">文件下载测试</h2>
+<ul>
+<li>视频下载：爱奇艺、腾讯视频、优酷、Bilbili，youtube等等</li>
+</ul>
+<blockquote>
+<p>只要你打开想要下载的音视频页面，IDM 会自动检测在线播放器发出的多媒体请求并在播放器上显示下载浮动条，你可以直接下载流媒体网站中的视频进行离线观看。支持 MP4、MP3、MOV、AAC 等常见音视频格式的检测与下载。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020152253633.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020160417373.png" alt=""></p>
+<ul>
+<li><strong>下载文件测试</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020152555843.png" alt=""></p>
+<blockquote>
+<p>​		当弹出下载窗口时，IDM已经开始在后台开始下载了，这会让你产生一种错觉 → 点击开始下载后，你发现文件已经下载了一大半 ~~ 这是因为 IDM 下载时的连接数很多，下载界面显示传输速度已经达到了 11.7Mbps，快要拉满 100M带宽了。细心的你会发现下面下载进度条中有16根小红线，这正是我们之前设置的最大连接数，如果你修改成了32，那么下方将会显示32根小红线，并且更加密集。增加下载线程会将你的下载文件速度最高提升 5~6 倍 ！</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020152759761.png" alt=""></p>
+<ul>
+<li>下载特殊的 m3u8文件</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20201020154504111.png" alt=""></p>
+<blockquote>
+<p>此处的m3u8文件实质上是一个播放列表，意思是将一个完整的视频分割成一小段一小段，然后逐个放给你看。有些网站的m3u8文件是可以直接利用IDM下载的，并且能够下载到完整的视频，但拿国内的<code>腾讯课堂</code>来说，这个网站对视频文件进行了分割，我们需要下载所有的视频片段进行拼接，这给我们下载一个完整的视频带来很大的麻烦，我们可以通过 IDM + N_m3u8DL-CLI.exe 的方式解决，具体内容请参考往期文章：https://betterman.xyz/348.html</p>
+</blockquote>
+<ul>
+<li>文件下载路径：文件保存位置</li>
+</ul>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020153605372.png" alt=""></p>
+<h2 id="卸载">卸载</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020161457429.png" alt=""></p>
+<blockquote>
+<p>从安装到卸载，一条龙服务！</p>
+<p>Win + S 搜索控制面板，进入卸载软件，右键 IDM 即可卸载</p>
+<p>注意，点击 卸载 后可能会重启电脑，请保存好当前工作环境并关闭所有软件后再进行卸载操作。</p>
+</blockquote>
+<h2 id="类似软件">类似软件</h2>
+<ul>
+<li>FDM：免费开源，支持p2p，下载种子和磁力链接</li>
+<li>XDM</li>
+<li>ADM</li>
+<li>NDM</li>
+</ul>
+<h2 id="下载百度网盘文件">下载百度网盘文件</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20201020162433771.png" alt=""></p>
+<blockquote>
+<p>众所周知，pandownload事件发生后，大家都在骂百度。害，毕竟百度也是要恰饭的，但收费确实有点点贵了。那么作为一个普通用户该如何使用 IDM 来下载百度网盘的文件呢？</p>
+</blockquote>
+<blockquote>
+<p>pandownload 软件内部使用的是 Aria2 多线程下载，其原理与 IDM 类似！</p>
+</blockquote>
+<ul>
+<li>具体步骤</li>
+</ul>
+<ol>
+<li>选项 -&gt; 下载 -&gt; 手动添加任务时使用的用户代理（UA）-&gt; 填入 <strong>LogStatistic</strong></li>
+<li><strong>右键复制下载链接</strong>（直接点击 或 右键调用 IDM 将传入浏览器的 UA，将会导致下载失败），在 IDM 新建任务，粘贴链接即可下载。</li>
+<li>具体内容请查看往期文章《最新福利&ndash;百度网盘在线解析满速下载》</li>
+</ol>
+]]></content>
+		</item>
 		
 		<item>
 			<title>18 没有找不到的电子书系列</title>
-			<link>http://penghaiku.github.io/posts/18-%E6%B2%A1%E6%9C%89%E6%89%BE%E4%B8%8D%E5%88%B0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B3%BB%E5%88%97/</link>
-			<pubDate>Sat, 23 Jan 2021 17:04:47 +0800</pubDate>
+			<link>https://penghaiku.github.io/posts/18-%E6%B2%A1%E6%9C%89%E6%89%BE%E4%B8%8D%E5%88%B0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B3%BB%E5%88%97/</link>
+			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
 			
-			<guid>http://penghaiku.github.io/posts/18-%E6%B2%A1%E6%9C%89%E6%89%BE%E4%B8%8D%E5%88%B0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B3%BB%E5%88%97/</guid>
+			<guid>https://penghaiku.github.io/posts/18-%E6%B2%A1%E6%9C%89%E6%89%BE%E4%B8%8D%E5%88%B0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B3%BB%E5%88%97/</guid>
 			<description>国内电子书网站 1、鸠摩搜书 网址：https://www.jiumodiary.com/
 一个强大的搜书神站，无论是什么类型的书籍，只要你知道书名，就可以轻松的搜到你想要书籍。页面简单明了，书籍种类繁多，格式多种多样，有mobi格式、pdf格式、word格式、txt格式等。关键是可以无限下载，无需注册登录。
 2、周读 网址：https://www.shudan.vip/category/ireadweek
@@ -236,11 +363,218 @@ IT书更多的资源网站，支持下载，不支持kindle推送。注册需要
 		</item>
 		
 		<item>
-			<title>Message</title>
-			<link>http://penghaiku.github.io/posts/message/</link>
+			<title>19-kail5安装教程</title>
+			<link>https://penghaiku.github.io/posts/19-kail-5%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
 			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
 			
-			<guid>http://penghaiku.github.io/posts/message/</guid>
+			<guid>https://penghaiku.github.io/posts/19-kail-5%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+			<description>准备 安装c51v960a_kail_5_安装包  这个安装包是最新版的 kail ，软件来源于官网http://www2.keil.com/mdk5/uvision/
+ 添加证书  完成安装后，以管理员身份 启动 Keil uVision5
+ 启动注册机 KEIL_Lic  复制 软件的 CID 到注册机内生成 LIC ，再以管理员身份运行 kail_5 软件，输入注册码就可以了
+  添加 LIC 后发现报错，如下图，请用管理员身份打开 kail5，再添加 LIC
+  这样应该就是激活成功的样子吧！
+ 汉化 kail_5  右键图标打开文件所在位置，我们找到进入 kail_5 软件的安装路径，如下图
+  所谓汉化，其修改的是应用程序内的内容。我们只需要将应用程序这个文件替换成已经汉化的应用程序就可以了。原应用程序建议提前备份，不想汉化时恢复即可。
+ 汉化后界面 项目测试 常见问题  遇到 注册机 报毒问题，在安全中心还原就可以。保险起见，你可以在安装前关闭杀毒软件！！！  关于  上述文件下载地址：https://share.betterman.xyz/公开分享/01-软件备份/ 上述软件包中还含有 Arm 的 mdk ，这个可以自选安装 本教程为原创文章，未经允许，禁止转载。 关注公众号：青衫不是山  </description>
+			<content type="html"><![CDATA[<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030155442.png" alt=""></p>
+<h2 id="准备">准备</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030154606.png" alt=""></p>
+<h2 id="安装c51v960a_kail_5_安装包">安装c51v960a_kail_5_安装包</h2>
+<blockquote>
+<p>这个安装包是最新版的 kail ，软件来源于官网<a href="http://www2.keil.com/mdk5/uvision/">http://www2.keil.com/mdk5/uvision/</a></p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150741.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150752.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150808.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150845.png" alt=""></p>
+<h2 id="添加证书">添加证书</h2>
+<blockquote>
+<p>完成安装后，<code>以管理员身份</code> 启动 <code>Keil uVision5</code></p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030151355.png" alt=""></p>
+<h3 id="启动注册机-keil_lic">启动注册机 KEIL_Lic</h3>
+<blockquote>
+<p>复制 软件的 CID 到注册机内生成 LIC ，再以管理员身份运行 kail_5 软件，输入注册码就可以了</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030151901.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030151943.png" alt=""></p>
+<blockquote>
+<p>添加 LIC 后发现报错，如下图，请用管理员身份打开 kail5，再添加 LIC</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152005.png" alt=""></p>
+<blockquote>
+<p>这样应该就是激活成功的样子吧！</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152129.png" alt=""></p>
+<h2 id="汉化-kail_5">汉化 kail_5</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152315.png" alt=""></p>
+<blockquote>
+<p>右键图标打开文件所在位置，我们找到进入 kail_5 软件的安装路径，如下图</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152442.png" alt=""></p>
+<blockquote>
+<p>所谓汉化，其修改的是应用程序内的内容。我们只需要<code>将应用程序这个文件替换成已经汉化的应用程序</code>就可以了。原应用程序建议提前备份，不想汉化时恢复即可。</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152710.png" alt=""></p>
+<h3 id="汉化后界面">汉化后界面</h3>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030152804.png" alt=""></p>
+<h2 id="项目测试">项目测试</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/kail.gif" alt=""></p>
+<h2 id="常见问题">常见问题</h2>
+<blockquote>
+<p>遇到 注册机 报毒问题，在安全中心还原就可以。保险起见，你可以在安装前关闭杀毒软件！！！ 
+<img src="https://gitee.com/haikupeng/myblog/raw/master/img/Snipaste_2020-10-30_14-49-46.png" alt=""></p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150355.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150430.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030150515.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/20201030151529.png" alt=""></p>
+<h2 id="关于">关于</h2>
+<ul>
+<li>上述文件下载地址：https://share.betterman.xyz/公开分享/01-软件备份/</li>
+<li>上述软件包中还含有 Arm 的 mdk ，这个可以自选安装</li>
+<li>本教程为原创文章，未经允许，禁止转载。</li>
+<li>关注公众号：青衫不是山</li>
+</ul>
+]]></content>
+		</item>
+		
+		<item>
+			<title>20-python2 下 pip 命令报错</title>
+			<link>https://penghaiku.github.io/posts/20-python2-%E4%B8%8B-pip-%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99/</link>
+			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
+			
+			<guid>https://penghaiku.github.io/posts/20-python2-%E4%B8%8B-pip-%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99/</guid>
+			<description>问题背景   没有 pip 模块，那就下载一个 pip 包——当前最新版 setuptools-51.3.1
+  在 setuptools-51.3.1 路径下打开 cmd ，使用 python setup.py install 命令手动安装模块，报错显示缺少 setuptools 模块，好家伙，要装 pip还需要先安装 setuptools。。
+    下载好 setuptools 包——当前最新版 setuptools-51.3.1.tar.gz
+ 在 setuptools-51.3.1.tar.gz 解压目录下打开 cmd ，使用 python setup.py install 命令手动安装模块，又开始如下报错了，开始套娃。    最终解决方案 1、下载并运行 ez_setup.py 文件  下载ez_setup.py文件，并拷贝到 python2 的安装路径下，如下图
+  拷贝到安装路径下后，打开 powershell 或 cmd，运行 python ez_setup.py 这个命令即可开始编译构建，为接下来安装 pip 和 setuptools 模块做准备
+  打开 powershell 或 cmd，运行 python ez_setup.</description>
+			<content type="html"><![CDATA[<h2 id="问题背景">问题背景</h2>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117232641735.png" alt=""></p>
+<ul>
+<li>
+<p>没有 <strong>pip</strong> 模块，那就下载一个 pip 包——当前最新版 setuptools-51.3.1</p>
+<ul>
+<li>
+<p>在 setuptools-51.3.1 路径下打开 cmd ，使用 <code>python setup.py install</code> 命令手动安装模块，报错显示缺少 setuptools 模块，好家伙，要装 pip还需要先安装 setuptools。。</p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117234800329.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>下载好 <strong>setuptools</strong> 包——当前最新版 setuptools-51.3.1.tar.gz</p>
+<ul>
+<li>在 setuptools-51.3.1.tar.gz 解压目录下打开 cmd ，使用 <code>python setup.py install</code> 命令手动安装模块，又开始如下报错了，开始套娃。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/coolhaiku/haiku/blog-img/image-20210117231753112.png" alt=""></p>
+<h2 id="最终解决方案">最终解决方案</h2>
+<h3 id="1下载并运行-ez_setuppy-文件">1、下载并运行 <strong>ez_setup.py</strong> 文件</h3>
+<blockquote>
+<p>下载ez_setup.py文件，并拷贝到 python2 的安装路径下，如下图</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117233019296.png" alt=""></p>
+<blockquote>
+<p>拷贝到安装路径下后，打开 powershell 或 cmd，运行 <code>python ez_setup.py</code> 这个命令即可开始编译构建，为接下来安装 <strong>pip</strong> 和 <strong>setuptools</strong> 模块做准备</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117233139461.png" alt=""></p>
+<blockquote>
+<p>打开 powershell 或 cmd，运行 <code>python ez_setup.py</code> 这个命令，结果如下</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS C:<span class="se">\P</span>ython27&gt; python .<span class="se">\e</span>z_setup.py
+ez_setup.py is deprecated and when using it setuptools will be pinned to 33.1.1 since it<span class="err">&#39;</span>s the last version that supports setuptools self upgrade/installation, check https://github.com/pypa/setuptools/issues/581 <span class="k">for</span> more info<span class="p">;</span> use pip to install setuptools
+Extracting in c:<span class="se">\u</span>sers<span class="se">\r</span>oger<span class="se">\a</span>ppdata<span class="se">\l</span>ocal<span class="se">\t</span>emp<span class="se">\t</span>mpwqfgsu
+Now working in c:<span class="se">\u</span>sers<span class="se">\r</span>oger<span class="se">\a</span>ppdata<span class="se">\l</span>ocal<span class="se">\t</span>emp<span class="se">\t</span>mpwqfgsu<span class="se">\s</span>etuptools-33.1.1
+Installing Setuptools
+......此处省略 <span class="m">10000</span> 行
+Installing easy_install-script.py script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install.exe script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install.exe.manifest script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7-script.py script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7.exe script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7.exe.manifest script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+
+Installed c:<span class="se">\p</span>ython27<span class="se">\l</span>ib<span class="se">\s</span>ite-packages<span class="se">\s</span>etuptools-33.1.1-py2.7.egg
+Processing dependencies <span class="k">for</span> <span class="nv">setuptools</span><span class="o">==</span>33.1.1
+Finished processing dependencies <span class="k">for</span> <span class="nv">setuptools</span><span class="o">==</span>33.1.1
+</code></pre></div><h3 id="2安装-setuptools-包">2、安装 setuptools 包</h3>
+<blockquote>
+<p>运行 ez_setup.py 后，python 安装路径下会出现一个 setuptools 压缩包——版本为 setuptools-33.1.1.zip（本机环境为 python 2.7）,将压缩包解压到当前路径，进入该文件夹，执行安装命令—— 使用 <code>python setup.py install</code> 命令手动安装模块，运行结果如下</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS C:<span class="se">\P</span>ython27<span class="se">\s</span>etuptools-33.1.1&gt; python .<span class="se">\s</span>etup.py install
+running install
+
+Installing easy_install.exe script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install.exe.manifest script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7-script.py script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7.exe script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+Installing easy_install-2.7.exe.manifest script to C:<span class="se">\P</span>ython27<span class="se">\S</span>cripts
+
+Installed c:<span class="se">\p</span>ython27<span class="se">\l</span>ib<span class="se">\s</span>ite-packages<span class="se">\s</span>etuptools-33.1.1-py2.7.egg
+Processing dependencies <span class="k">for</span> <span class="nv">setuptools</span><span class="o">==</span>33.1.1
+Finished processing dependencies <span class="k">for</span> <span class="nv">setuptools</span><span class="o">==</span>33.1.1
+</code></pre></div><blockquote>
+<p>运行结果和前一步骤的结果差不多，以防万一，还是执行一遍吧！</p>
+<p>注意：前期无法安装上自己下载的高版本的 setuptools包可能是包版本和python版本不对应，所以安装报错。</p>
+</blockquote>
+<h3 id="3安装-pip-包">3、安装 pip 包</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS C:<span class="se">\P</span>ython27<span class="se">\p</span>ip-20.3.3&gt; python setup.py install
+...... 此处省略 <span class="m">10000</span> 行
+Installed c:<span class="se">\p</span>ython27<span class="se">\l</span>ib<span class="se">\s</span>ite-packages<span class="se">\p</span>ip-20.3.3-py2.7.egg
+Processing dependencies <span class="k">for</span> <span class="nv">pip</span><span class="o">==</span>20.3.3
+Finished processing dependencies <span class="k">for</span> <span class="nv">pip</span><span class="o">==</span>20.3.3
+</code></pre></div><h3 id="4添加环境变量">4、添加环境变量</h3>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117235146239.png" alt=""></p>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117235420553.png" alt=""></p>
+<h3 id="验证-pip-包">验证 pip 包</h3>
+<blockquote>
+<p>此时添加完环境变量后，将所有的 cmd 或 powershell 窗口关闭，输入 命令 <code>pip list</code> ，若列出已安装的包（pip 和 setuptools 的版本），则为安装成功，成功界面如下图</p>
+</blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210117235738502.png" alt=""></p>
+<h3 id="安装-第三方包-测试">安装 第三方包 测试</h3>
+<blockquote>
+<p>上述图片中有一些 SSL 报错和连接失败报错，这是正常的，因为源包网站在国外，我们只需要改到国内就可以了。命令行运行 命令 <code>pip config set global.index-url http://pypi.tuna.tsinghua.edu.cn/simple</code>  即可一键修改好 <strong>pip 源</strong> 。</p>
+</blockquote>
+<ul>
+<li>安装 numpy ，运行 <code>pip install numpy</code> ，又开始报错</li>
+</ul>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210118001433688.png" alt=""></p>
+<blockquote>
+<p>报错原因是没有添加信任主机，运行命令 <code>pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn</code>  即可解决，也可以修改 pip 配置文件解决以上报错</p>
+</blockquote>
+<ul>
+<li><strong>修改 pip 配置文件</strong></li>
+</ul>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210118001731999.png" alt=""></p>
+<blockquote>
+<p>修改内容为：</p>
+<pre><code>[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host = mirrors.aliyun.com
+</code></pre></blockquote>
+<p><img src="https://gitee.com/haikupeng/myblog/raw/master/img/image-20210118001924163.png" alt=""></p>
+<h2 id="python2-安装-jupyter-报错">python2 安装 jupyter 报错</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pip</span> <span class="n">install</span> <span class="n">ipykernel</span>
+<span class="c1"># 会出现一些列报错，最新版的 IPython 不支持 Python 2.7，这时可先单独安装ipython，并指定旧的版本号进行安装，解决办法如下</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">ipython</span><span class="o">==</span><span class="mf">5.3</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">tornado</span><span class="o">==</span><span class="mf">4.5</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">ipykernel</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">ipykernel</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span>
+<span class="c1"># 把python 2也加入到Jupyter的kernel里面</span>
+</code></pre></div><h2 id="end">END</h2>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Message</title>
+			<link>https://penghaiku.github.io/posts/message/</link>
+			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
+			
+			<guid>https://penghaiku.github.io/posts/message/</guid>
 			<description>测试页面 哈哈哈 so easy！！！ </description>
 			<content type="html"><![CDATA[<h1 id="测试页面">测试页面</h1>
 <h2 id="哈哈哈">哈哈哈</h2>
@@ -250,10 +584,10 @@ IT书更多的资源网站，支持下载，不支持kindle推送。注册需要
 		
 		<item>
 			<title>README</title>
-			<link>http://penghaiku.github.io/posts/readme/</link>
+			<link>https://penghaiku.github.io/posts/readme/</link>
 			<pubDate>Sat, 23 Jan 2021 16:49:20 +0800</pubDate>
 			
-			<guid>http://penghaiku.github.io/posts/readme/</guid>
+			<guid>https://penghaiku.github.io/posts/readme/</guid>
 			<description>关于本站  佛系站长，不定时更新！ 本站仅作为演示站点，仅供学习和交流使用  私人定制网址导航：Betterman网址导航 个人博客：青衫不是山 联系我  个人邮箱：bettermanxyz@gmail.com 个人微信：bettermanxyz 给我留言：留言板  </description>
 			<content type="html"><![CDATA[<h2 id="关于本站">关于本站</h2>
 <ul>
